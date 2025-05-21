@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I.A Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black text-white overflow-x-hidden">
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full z-50">
+    <div class="max-w-3xl mx-auto px-4">
+      <div id="navbar"
+        class="flex justify-between items-center h-14 mt-3 bg-black border border-white/20  px-6 shadow-sm transition-all duration-300">
+
+        <a href="#home">
+        <div class="text-2xl font-semibold text-white tracking-wide">I.A</div>
+        </a>
+
+        <!-- Hamburger Icon -->
+        <label class="hamburger">
+          <input type="checkbox" id="menuToggle">
+          <svg viewBox="0 0 32 32">
+            <path class="line line-top-bottom"
+              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+            </path>
+            <path class="line" d="M7 16 27 16"></path>
+          </svg>
+        </label>
+      </div>
+
+      <div id="mobileMenu" class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+        <div
+          class="bg-black text-white rounded-b-2xl border-x border-b border-white/20 shadow-md py-2 space-y-2 text-sm px-4">
+          <a href="#project" class="block py-2 px-2 hover:bg-gray-800 rounded transition">Project</a>
+          <a href="#about" class="block py-2 px-2 hover:bg-gray-800 rounded transition">About</a>
+          <a href="#contact" class="block py-2 px-2 hover:bg-gray-800 rounded transition">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen w-screen overflow-hidden flex items-center pt-20">
+    <div class="w-full h-full transform scale-[1.4]">
+      <iframe src='https://my.spline.design/hellodistortingintro-ZRg8JjvFdFgawOhLxSLpo0St/' frameborder='0' width='100%'
+        height='100%'></iframe>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <div class="text-center mb-12 mt-32" data-aos="fade-up" id="project">
+    <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white font-[Inter]">
+      <span class="bg-gradient-to-r from-white/90 to-white/60 bg-clip-text text-transparent">Recent Projects</span>
+    </h2>
+    <p
+      class="mt-4 text-base bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent font-light md:text-lg">
+      Some of the latest work I've crafted with passion and purpose.
+    </p>
+  </div>
+
+  <section class=" py-10 px-4 text-white">
+    <div class="max-w-7xl mx-auto space-y-12">
+      <!-- Row 1 -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+        <!-- CARD BESAR -->
+        <div class="lg:col-span-2 h-[400px]" data-aos="fade-right" data-aos-delay="400">
+          <a href="https://www.hziq.my.id/" class="block h-full">
+            <div class="relative group rounded-2xl overflow-hidden w-full h-full">
+              <img src="assets/Web Wisata.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <div class="absolute inset-0 bg-black/40 group-hover:bg-black/70 transition duration-500"></div>
+              <div class="absolute bottom-6 left-6 opacity-0 group-hover:opacity-100 transition duration-500">
+                <h3 class="text-2xl font-bold">Website Wisata Jogjakarta</h3>
+                <p class="text-sm text-gray-300">HTML, CSS, JavaScript</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- DUA CARD KECIL -->
+        <div class="flex flex-col gap-6">
+          <a href="https://zer0-ia.github.io/Web-Berita-Kerajaan/" class="block">
+            <div class="relative group rounded-2xl overflow-hidden h-[190px]" data-aos="fade-left" data-aos-delay="400">
+              <img src="assets/Web_Kerajaan.png"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <div class="absolute inset-0 bg-black/40 group-hover:bg-black/70 transition duration-500"></div>
+              <div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition duration-500">
+                <h3 class="text-lg font-semibold">Website Berita Kerajaan</h3>
+                <p class="text-sm text-gray-300">HTML, CSS</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://zer0-ia.github.io/Web-Rumah-Sakit/" class="block">
+            <div class="relative group rounded-2xl overflow-hidden h-[190px]" data-aos="fade-left" data-aos-delay="400">
+              <img src="assets/web rumah sakit.png"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <div class="absolute inset-0 bg-black/40 group-hover:bg-black/70 transition duration-500"></div>
+              <div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition duration-500">
+                <h3 class="text-lg font-semibold">Website Rumah Sakit</h3>
+                <p class="text-sm text-gray-300">HTML, CSS, Bootstrap</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- DUA CARD KECIL -->
+        <div class="flex flex-col gap-6 lg:order-1 order-2">
+          <div class="relative group rounded-2xl overflow-hidden h-[190px]" data-aos="fade-right" data-aos-delay="400">
+            <a href="https://zer0-ia.github.io/Website-Sigma-Travel/">
+              <img src="assets/web travel.png"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <div class="absolute inset-0 bg-black/40 group-hover:bg-black/70 transition duration-500"></div>
+              <div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition duration-500">
+                <h3 class="text-lg font-semibold">Website Travel</h3>
+                <p class="text-sm text-gray-300">HTML, CSS, Bootstrap</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="relative group rounded-2xl overflow-hidden h-[190px]" data-aos="fade-right" data-aos-delay="400">
+            <a href="https://zer0-ia.github.io/Web-Book-Store/">
+              <img src="assets/web book.png"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <div class="absolute inset-0 bg-black/40 group-hover:bg-black/70 transition duration-500"></div>
+              <div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition duration-500">
+                <h3 class="text-lg font-semibold">Website Toko Buku</h3>
+                <p class="text-sm text-gray-300">HTML, Bootstrap, JavaScript</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- CARD BESAR -->
+        <div class="relative group rounded-2xl overflow-hidden lg:col-span-2 h-[400px] lg:order-2 order-1"
+          data-aos="fade-left" data-aos-delay="400">
+          <a href="https://zer0-ia.github.io/Game-Center/">
+            <img src="assets/game cennter.png"
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/70 transition duration-500"></div>
+            <div class="absolute bottom-6 left-6 opacity-0 group-hover:opacity-100 transition duration-500">
+              <h3 class="text-2xl font-bold">Website Game Collaboration</h3>
+              <p class="text-sm text-gray-300">HTML, Tailwind</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Profile -->
+<section id="about" class="bg-black text-white py-16 md:py-24 px-6 font-sans">
+  <div class="max-w-4xl mx-auto">
+    <div class="mb-12 md:mb-16">
+      <p class="text-xs uppercase tracking-[0.5em] text-gray-400 mb-2" data-aos="fade-down" data-aos-delay="200">
+        INTRODUCTION</p>
+      <h2
+        class="text-7xl md:text-8xl lg:text-9xl font-bold leading-[0.8] bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent"
+        data-aos="fade-up" data-aos-delay="200">
+        PROFILE
+      </h2>
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-8 md:gap-12 items-center" data-aos="fade-right" data-aos-delay="200">
+      <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 flex-shrink-0 group">
+        <img src="assets/Profile.png" alt="Ibnu Adinata"
+          class="w-full h-full object-cover rounded-lg shadow-lg border border-gray-600/30" />
+        <div class="absolute inset-0 rounded-lg bg-gradient-to-t from-black/80 via-black/30 to-transparent [background-position:0_60%] pointer-events-none"></div>
+      </div>
+
+      <div class="space-y-4 md:space-y-6" data-aos="fade-right" data-aos-delay="300">
+        <h3 class="text-2xl md:text-3xl font-medium text-gray-100">
+          <span id="typewriter-container" class="typewriter-container">
+            <span id="typewriter"></span>
+          </span>
+        </h3>
+        
+        <div class="space-y-3 md:space-y-4 leading-relaxed">
+          <p class="text-sm md:text-base text-gray-400">
+            My name is <span class="font-semibold text-white">Ibnu Adinata</span>, and I'm a
+            <span class="font-semibold text-white">Front-End Developer</span>.
+          </p>
+
+          <p
+            class="text-xl md:text-2xl bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent font-light">
+            I blend artwork with cutting-edge technology,<br>
+            designing immersive visual and functional user interfaces and experiences.
+          </p>
+
+          <p class="text-sm md:text-base text-gray-400">
+            With over five years of experience in programming, I specialize in frontend development, creating dynamic
+            and responsive web and mobile applications.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+  <section id="skills" class="bg-black py-16 md:py-24 px-6 font-sans">
+    <div class="max-w-4xl mx-auto">
+      <div class="mb-12 md:mb-16 text-center">
+        <p class="text-xs uppercase tracking-[0.5em] text-gray-400 mb-2" data-aos="fade-down" data-aos-delay="200">
+          CAPABILITIES</p>
+        <h2
+          class="text-7xl md:text-8xl font-bold leading-[0.8] bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
+          data-aos="fade-up" data-aos-delay="200">
+          SKILLS
+        </h2>
+        <p class="mt-6 text-gray-400 max-w-2xl mx-auto" data-aos="fade-up">
+          Here's a comprehensive list of my technical skills and tools I work with
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade-up">
+        <!-- Languages & Frameworks -->
+        <div
+          class="bg-gray-900/50 border border-white/10 rounded-xl p-6 backdrop-blur-sm hover:border-white/20 transition-all duration-500 group">
+          <div class="flex items-center gap-3 mb-6">
+            <div
+              class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="text-white">
+                <path
+                  d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z">
+                </path>
+                <path d="M5 3v4"></path>
+                <path d="M19 17v4"></path>
+                <path d="M3 5h4"></path>
+                <path d="M17 19h4"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white">LANGUAGE & FRAMEWORK</h3>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <span class="skill-badge">HTML</span>
+            <span class="skill-badge">CSS</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">Tailwind CSS</span>
+            <span class="skill-badge">Bootstrap</span>
+            <span class="skill-badge">Kotlin</span>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div
+          class="bg-gray-900/50 border border-white/10 rounded-xl p-6 backdrop-blur-sm hover:border-white/20 transition-all duration-500 group">
+          <div class="flex items-center gap-3 mb-6">
+            <div
+              class="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="text-white">
+                <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                <path d="M10 9H8"></path>
+                <path d="M16 13H8"></path>
+                <path d="M16 17H8"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white">TOOLS</h3>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <span class="skill-badge">Visual Studio Code</span>
+            <span class="skill-badge">Github</span>
+            <span class="skill-badge">Figma</span>
+            <span class="skill-badge">Framer</span>
+            <span class="skill-badge">Canva</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate -->
+<section id="certificate" class="bg-black text-white py-16 md:py-24 px-4 sm:px-6 font-sans">
+  <div class="max-w-5xl mx-auto">
+    <div class="mb-12 text-center">
+      <p class="text-xs uppercase tracking-[0.5em] text-gray-400 mb-2" data-aos="fade-down" data-aos-delay="200">
+        CREDENTIAL
+      </p>
+      <h2 class="text-5xl md:text-7xl font-bold leading-[0.8] bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent" data-aos="fade-up" data-aos-delay="200">
+        MY CERTIFICATE
+      </h2>
+      <p class="mt-6 text-gray-400 max-w-2xl mx-auto" data-aos="fade-up">
+        Proof of my expertise and dedication in front-end development
+      </p>
+    </div>
+
+    <div class="flex justify-center" data-aos="zoom-in">
+      <div class="relative group w-full max-w-2xl">
+        <div class="absolute -inset-4 bg-gradient-to-r from-blue-500/30 to-purple-600/30 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        
+        <!-- Certificate Card -->
+        <div class="relative bg-gray-900/80 border border-white/10 rounded-xl overflow-hidden shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 transform group-hover:-translate-y-2">
+          <div class="relative overflow-hidden h-64 md:h-80">
+            <img src="assets/Sertifikat.jpg" alt="Front-End Developer Certificate" 
+                 class="w-full h-full object-contain"
+                 loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+          </div>
+          
+          <div class="p-6 md:p-8">
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <h3 class="text-xl md:text-2xl font-bold text-white mb-1">Front-End Developer Certification</h3>
+                <p class="text-sm text-purple-400 font-medium">Universitas Teknologi Indonesia</p>
+              </div>
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/20 text-blue-300 border border-blue-500/30">HTML/CSS/JS</span>
+            </div>
+            
+            <p class="text-gray-300 text-sm md:text-base mb-6">
+              Awarded for successfully completing the intensive Front-End Web Development course, demonstrating proficiency in modern web technologies.
+            </p>
+            
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <i class="fas fa-calendar-alt text-gray-400 text-sm"></i>
+                <span class="text-xs text-gray-400">Issued: April 2025</span>
+              </div>
+              <div class="flex gap-3">
+                <a href="assets/Sertifikat.jpg" 
+                   class="text-xs font-medium px-3 py-2 rounded-lg bg-gray-800/50 hover:bg-gray-700/50 border border-white/10 hover:border-white/20 transition flex items-center gap-2"
+                   download>
+                  <i class="fas fa-download"></i> Download
+                </a>
+                <a href="#contact" 
+                   class="text-xs font-medium px-3 py-2 rounded-lg bg-gradient-to-r from-blue-500/80 to-purple-600/80 hover:from-blue-500 hover:to-purple-600 transition flex items-center gap-2">
+                  <i class="fas fa-envelope"></i> Verify
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Process -->
+  <section id="process" class="py-16 px-4 max-w-7xl mx-auto">
+    <div class="mb-12 text-center">
+      <p class="text-xs uppercase tracking-[0.5em] text-gray-400 mb-2" data-aos="fade-down" data-aos-delay="200">
+        WORKFLOW</p>
+      <h2
+        class="text-5xl md:text-7xl font-bold leading-[0.8] bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
+        data-aos="fade-up" data-aos-delay="200">
+        PROCESS
+      </h2>
+      <p class="mt-4 text-gray-400 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+        My structured approach to delivering exceptional results
+      </p>
+    </div>
+
+    <div class="relative">
+      <div
+        class="absolute left-1/2 h-full w-0.5 bg-gradient-to-b from-blue-400/20 via-purple-500/50 to-transparent -translate-x-1/2 hidden md:block">
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Step 1 -->
+        <div class="relative group" data-aos="fade-up">
+          <div
+            class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg md:left-0 md:translate-x-0 z-30">
+            <span class="text-white font-bold">1</span>
+          </div>
+          <div
+            class="bg-gray-900/50 border border-white/10 rounded-xl p-6 pt-10 backdrop-blur-sm hover:border-white/20 transition-all duration-500 h-full">
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500/20 to-purple-600/20 flex items-center justify-center">
+                <i class="fas fa-mouse-pointer text-blue-400"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white">Initial Contact</h3>
+            </div>
+            <p class="text-sm text-gray-400">
+              Reach out through our contact form or schedule a call to discuss your project vision and requirements.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="relative group" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg md:left-0 md:translate-x-0 z-30">
+            <span class="text-white font-bold">2</span>
+          </div>
+          <div
+            class="bg-gray-900/50 border border-white/10 rounded-xl p-6 pt-10 backdrop-blur-sm hover:border-white/20 transition-all duration-500 h-full">
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500/20 to-purple-600/20 flex items-center justify-center">
+                <i class="fas fa-pencil-ruler text-purple-400"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white">Design Phase</h3>
+            </div>
+            <p class="text-sm text-gray-400">
+              I create stunning, functional designs that align with your brand and goals using modern design tools.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="relative group" data-aos="fade-up" data-aos-delay="200">
+          <div
+            class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg md:left-0 md:translate-x-0 z-30">
+            <span class="text-white font-bold">3</span>
+          </div>
+          <div
+            class="bg-gray-900/50 border border-white/10 rounded-xl p-6 pt-10 backdrop-blur-sm hover:border-white/20 transition-all duration-500 h-full">
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500/20 to-purple-600/20 flex items-center justify-center">
+                <i class="fas fa-code text-blue-300"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white">Development</h3>
+            </div>
+            <p class="text-sm text-gray-400">
+              Your designs are transformed into a responsive, high-performance digital product with clean, efficient
+              code.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="relative group" data-aos="fade-up" data-aos-delay="300">
+          <div
+            class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg md:left-0 md:translate-x-0 z-30">
+            <span class="text-white font-bold">4</span>
+          </div>
+          <div
+            class="bg-gray-900/50 border border-white/10 rounded-xl p-6 pt-10 backdrop-blur-sm hover:border-white/20 transition-all duration-500 h-full">
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500/20 to-purple-600/20 flex items-center justify-center">
+                <i class="fas fa-rocket text-purple-300"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white">Delivery</h3>
+            </div>
+            <p class="text-sm text-gray-400">
+              Final testing, polishing, and handover of your completed project with documentation and support.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="mt-16 bg-gradient-to-r from-blue-900/30 via-purple-900/30 to-transparent border border-white/10 rounded-xl p-8 backdrop-blur-sm max-w-4xl mx-auto"
+      data-aos="fade-up">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-4">
+          <div
+            class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center flex-shrink-0">
+            <i class="fas fa-paper-plane text-white"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white">Ready to Start?</h3>
+            <p class="text-sm text-gray-400">Let's create something amazing together</p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+          <a href="#contact"
+            class="bg-white text-black px-6 py-3 rounded-lg text-sm font-bold hover:bg-white/90 transition-colors text-center">
+            Contact Me
+          </a>
+          <a href="#project"
+            class="bg-transparent border border-white/20 text-white px-6 py-3 rounded-lg text-sm font-bold hover:bg-white/10 transition-colors text-center">
+            View Projects
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-black text-white py-16 px-4 sm:px-6 font-sans">
+    <div class="max-w-4xl mx-auto">
+      <div class="mb-12 text-center">
+        <p class="text-xs uppercase tracking-[0.5em] text-gray-400 mb-2" data-aos="fade-down" data-aos-delay="200">GET
+          IN TOUCH</p>
+        <h2
+          class="text-5xl sm:text-6xl md:text-7xl font-bold leading-[0.8] bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
+          data-aos="fade-up" data-aos-delay="200">
+          CONTACT
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-900/50 border border-white/10 rounded-xl p-8 backdrop-blur-sm h-full" data-aos="fade-right"
+          data-aos-delay="400">
+          <h3 class="text-xl font-bold text-white mb-6">Contact Information</h3>
+
+          <!-- Email -->
+          <div class="flex items-start gap-4 mb-6">
+            <div
+              class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500/20 to-purple-600/20 flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-envelope text-blue-400"></i>
+            </div>
+            <div>
+              <h4 class="text-sm font-medium text-gray-300 mb-1">Email</h4>
+              <a href="mailto:ibnuadinata1@gmail.com"
+                class="text-sm text-gray-400 hover:text-white transition-colors">ibnuadinata1@gmail.com</a>
+            </div>
+          </div>
+
+          <!-- WhatsApp -->
+          <div class="flex items-start gap-4 mb-6">
+            <div
+              class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500/20 to-purple-600/20 flex items-center justify-center flex-shrink-0">
+              <i class="fab fa-whatsapp text-green-400"></i>
+            </div>
+            <div>
+              <h4 class="text-sm font-medium text-gray-300 mb-1">WhatsApp</h4>
+              <a href="https://wa.me/+62895354184962" target="_blank"
+                class="text-sm text-gray-400 hover:text-white transition-colors">+62 895-3541-84962</a>
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div class="mt-8">
+            <h4 class="text-sm font-medium text-gray-300 mb-4">Connect With Me</h4>
+            <div class="flex gap-4">
+              <a href="https://github.com/Zer0-IA" target="_blank"
+                class="w-10 h-10 rounded-full bg-gray-800/50 border border-white/10 flex items-center justify-center hover:bg-blue-500/20 hover:border-blue-500/30 transition-all">
+                <i class="fab fa-github text-white"></i>
+              </a>
+              <a href="https://facebook.com/@zyx.529792" target="_blank"
+                class="w-10 h-10 rounded-full bg-gray-800/50 border border-white/10 flex items-center justify-center hover:bg-blue-600/20 hover:border-blue-600/30 transition-all">
+                <i class="fab fa-facebook-f text-white"></i>
+              </a>
+              <a href="https://instagram.com/_1bnu_4" target="_blank"
+                class="w-10 h-10 rounded-full bg-gray-800/50 border border-white/10 flex items-center justify-center hover:bg-pink-500/20 hover:border-pink-500/30 transition-all">
+                <i class="fab fa-instagram text-white"></i>
+              </a>
+              <a href="https://codepen.com/Zer0-IA" target="_blank"
+                class="w-10 h-10 rounded-full bg-gray-800/50 border border-white/10 flex items-center justify-center hover:bg-blue-400/20 hover:border-blue-400/30 transition-all">
+                <i class="fab fa-codepen text-white"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="lg:col-span-2 bg-gray-900/50 border border-white/10 rounded-xl p-8 sm:p-10 backdrop-blur-sm"
+          data-aos="fade-left" data-aos-delay="400">
+          <div class="text-center mb-6">
+            <h3
+              class="text-xl md:text-2xl font-bold bg-gradient-to-r from-white/90 to-white/60 bg-clip-text text-transparent mb-2">
+              Send Me a Message
+            </h3>
+            <p class="text-gray-400 text-sm">
+              Have a project in mind or want to collaborate? Fill out the form below.
+            </p>
+          </div>
+
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="first-name" class="block text-sm font-medium text-gray-300 mb-2">First Name</label>
+                <input type="text" id="first-name" name="first-name" required
+                  class="w-full px-4 py-3 bg-gray-800/50 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 text-white placeholder-gray-500"
+                  placeholder="Your first name">
+              </div>
+              <div>
+                <label for="last-name" class="block text-sm font-medium text-gray-300 mb-2">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required
+                  class="w-full px-4 py-3 bg-gray-800/50 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 text-white placeholder-gray-500"
+                  placeholder="Your last name">
+              </div>
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
+              <input type="email" id="email" name="email" required
+                class="w-full px-4 py-3 bg-gray-800/50 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 text-white placeholder-gray-500"
+                placeholder="your@email.com">
+            </div>
+
+            <div>
+              <label for="subject" class="block text-sm font-medium text-gray-300 mb-2">Subject</label>
+              <select id="subject" name="subject" required
+                class="w-full px-4 py-3 bg-gray-800/50 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 text-white">
+                <option value="" disabled selected>Select a subject</option>
+                <option value="project">Project Inquiry</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="job">Job Opportunity</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Your Message</label>
+              <textarea id="message" name="message" rows="5" required
+                class="w-full px-4 py-3 bg-gray-800/50 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 text-white placeholder-gray-500"
+                placeholder="Tell me about your project..."></textarea>
+            </div>
+
+            <div class="pt-2">
+              <button type="submit"
+                class="w-full py-3 px-6 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 group">
+                <span>Send Message</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="group-hover:translate-x-1 transition-transform">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black border-t border-white/10 py-6 px-4 font-sans">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex flex-col items-center justify-center text-center space-y-1">
+        <div class="text-xl font-bold bg-gradient-to-r from-white/90 to-white/60 bg-clip-text text-transparent">
+          I.A
+        </div>
+        <p class="text-xs text-gray-400">
+          Front-End Developer
+        </p>
+        <p class="text-[0.65rem] text-gray-500 tracking-wide">
+          Copyright © 2025 - 2026 by Ibnu Adinata
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>
